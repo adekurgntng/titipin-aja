@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titipin Aja</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/rent.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-full">
+        <img class="navbar-logo" src="assets/img/logo.png" alt="logo" />
+        <a href="index.html" class="navbar-logo-text"
+          ><span>Titipin</span>Aja</a
+        >
+      </div>
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="service.html">Layanan Kami</a>
+        <a href="rent.html">Sewa</a>
+        <a href="take.html">Ambil</a>
+        <a href="history.html">Riwayat Pesanan</a>
+      </div>
+
+      <div class="navbar-icon">
+        <a href="#" id="hmenu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <section class="sewa" id="sewa">
+        <div class="sewa-content">
+            <h2 align="center">Sewa Loker</h2>
+            <form>
+                <label for="namaPenyewa">Nama Lengkap Penyewa:</label>
+                <input type="text" id="namaPenyewa" name="namaPenyewa" required>
+
+                <label for="noHpWa">No HP/WhatsApp:</label>
+                <input type="tel" id="noHpWa" name="noHpWa" required>
+
+                <label for="ukuranLoker">Ukuran Loker:</label>
+                <div class="ukuran-loker-container">
+                    <div class="ukuran-loker-option" data-ukuran="small">S
+                        <br>
+                        <br>
+                        (20 x 50 x 50 cm)
+                    </div>
+                    <div class="ukuran-loker-option" data-ukuran="medium">M<br>
+                        <br>
+                        (35 x 50 x 50 cm)</div>
+                    <div class="ukuran-loker-option" data-ukuran="large">L
+                        <br>
+                        <br>
+                        (50 x 50 x 50 cm)
+                    </div>
+                </div>
+
+                <label for="durasiSewa">Durasi Sewa (hari):</label>
+                <input type="number" id="durasiSewa" name="durasiSewa" required>
+
+                <label for="opsiPengantaran">Opsi Pengantaran Barang:</label>
+                <select id="opsiPengantaran" name="opsiPengantaran" required>
+                    <option value="pickup">Pickup</option>
+                    <option value="antar">Antar</option>
+                </select>
+
+                <label for="alamatPickup">Alamat Pickup (jika memilih pickup):</label>
+                <textarea id="alamatPickup" name="alamatPickup" rows="4"></textarea>
+
+                <label for="totalPembayaran">Total Pembayaran:</label>
+                <input type="text" id="totalPembayaran" name="totalPembayaran" readonly>
+
+                <button type="submit">Sewa Sekarang</button>
+            </form>
+        </div>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"
+    ></script>
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

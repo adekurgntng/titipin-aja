@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titipin Aja</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/take.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-full">
+        <img class="navbar-logo" src="assets/img/logo.png" alt="logo" />
+        <a href="index.html" class="navbar-logo-text"
+          ><span>Titipin</span>Aja</a
+        >
+      </div>
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="service.html">Layanan Kami</a>
+        <a href="rent.html">Sewa</a>
+        <a href="take.html">Ambil</a>
+        <a href="history.html">Riwayat Pesanan</a>
+      </div>
+
+      <div class="navbar-icon">
+        <a href="#" id="hmenu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <section class="ambil" id="ambil">
+      <div class="ambil-content">
+        <h2>Ambil Barang</h2>
+        <div class="detail-pesanan">
+          <table>
+            <tr>
+              <th colspan="2">Detail Informasi</th>
+            </tr>
+            <tr>
+              <td>Nama Lengkap</td>
+              <td>Murni Lestari Rahmi</td>
+            </tr>
+            <tr>
+              <td>No HP/WhatsApp</td>
+              <td>089123123123</td>
+            </tr>
+            <tr>
+              <td>No Transaksi</td>
+              <td>1411001</td>
+            </tr>
+            <tr>
+              <td>No Loker</td>
+              <td>001</td>
+            </tr>
+            <tr>
+              <td>Ukuran</td>
+              <td>Medium</td>
+            </tr>
+            <tr>
+              <td>Waktu Penitipan</td>
+              <td>14-11-2023 12:00</td>
+            </tr>
+            <tr>
+              <td>Maksimal Pengambilan</td>
+              <td>15-11-2023 12:00</td>
+            </tr>
+            <!-- ... Tambahkan baris lain sesuai kebutuhan ... -->
+          </table>
+        </div>
+
+        <div class="keterangan-pengembalian">
+          <label align="left" for="opsiPengembalian"
+            >Opsi Pengembalian Barang:</label
+          >
+          <select id="opsiPengembalian" name="opsiPengembalian" required>
+            <option value="pickup">Ambil Sendiri</option>
+            <option value="antar">Antar ke Rumah</option>
+          </select>
+
+          <label align="left" for="alamatPengembalian"
+            >Alamat Pengembalian (jika memilih pickup):</label
+          >
+          <textarea
+            id="alamatPengembalian"
+            name="alamatPengembalian"
+            rows="4"
+          ></textarea>
+
+          <label align="left" for="totalPembayaran">Total Pembayaran:</label>
+          <input
+            type="text"
+            id="totalPembayaran"
+            name="totalPembayaran"
+            readonly
+          />
+
+          <button type="button">Ambil Sekarang</button>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"
+    ></script>
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

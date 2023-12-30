@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titipin Aja</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-full">
+        <img class="navbar-logo" src="assets/img/logo.png" alt="logo" />
+        <a href="index.html" class="navbar-logo-text"
+          ><span>Titipin</span>Aja</a
+        >
+      </div>
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="service.html">Layanan Kami</a>
+        <a href="rent.html">Sewa</a>
+        <a href="take.html">Ambil</a>
+        <a href="history.html">Riwayat Pesanan</a>
+      </div>
+
+      <div class="navbar-icon">
+        <a href="#" id="hmenu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="mask-container">
+        <main class="content">
+          <h1>Dapatkan Pengalaman Penitipan Barang yang Praktis dan Aman</h1>
+        </main>
+      </div>
+    </section>
+
+    <div class="register-button">
+      <a href="#" id="openRegistrationPopup">Daftar Sekarang</a>
+    </div>
+
+    <div class="popup" id="registrationPopup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Registrasi</h2>
+        <form>
+          <label for="fullName">Nama Lengkap:</label>
+          <input type="text" id="fullName" name="fullName" required />
+
+          <label for="gender">Jenis Kelamin:</label>
+          <select id="gender" name="gender" required>
+            <option value="male">Laki-Laki</option>
+            <option value="female">Perempuan</option>
+          </select>
+
+          <label for="address">Alamat:</label>
+          <textarea id="address" name="address" rows="4" required></textarea>
+
+          <label for="phone">No HP/WhatsApp:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <label for="confirmPassword">Konfirmasi Password:</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+
+          <button type="submit" id="registerButton">Daftar</button>
+        </form>
+
+        <p id="loginLink">
+          Sudah punya akun? <a href="#" id="openLoginPopup">Login</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="popup" id="emailVerificationPopup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closeEmailVerificationPopup()"
+          >&times;</span
+        >
+        <h2>Verifikasi Email</h2>
+        <form id="emailVerificationForm">
+          <p align="justify">
+            Kami telah mengirimkan email verifikasi ke alamat email Anda.
+            Silakan periksa kotak masuk Anda dan masukkan kode unik verifikasi
+            di bawah:
+          </p>
+          <br />
+          <br />
+          <label for="verificationCode">Kode Verifikasi:</label>
+          <input
+            type="text"
+            id="verificationCode"
+            name="verificationCode"
+            required
+          />
+          <button type="button" id="verifyButton" onclick="verifyEmail()">
+            Verifikasi
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup" id="loginPopup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Login</h2>
+        <form>
+          <label for="loginEmail">Email:</label>
+          <input type="email" id="loginEmail" name="loginEmail" required />
+
+          <label for="loginPassword">Password:</label>
+          <input
+            type="password"
+            id="loginPassword"
+            name="loginPassword"
+            required
+          />
+
+          <button type="submit">Login</button>
+        </form>
+
+        <p id="registerLink">
+          Belum punya akun?
+          <a href="#" id="openRegistrationPopup">Daftar Sekarang</a>
+        </p>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"
+    ></script>
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

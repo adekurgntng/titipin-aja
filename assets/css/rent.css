@@ -1,0 +1,71 @@
+body {
+  background: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sewa-content {
+  max-width: 800px;
+  margin: 80px auto 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.ukuran-loker-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ukuran-loker-option {
+  width: calc(
+    33.33% - 29px
+  ); /* Menghitung lebar setiap opsi dengan jarak antara elemen */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+}
+
+.ukuran-loker-option:hover {
+  background-color: #f0f0f0;
+}
+
+.sewa-content h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.sewa-content form {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.sewa-content label {
+  color: #333;
+  font-size: 1em;
+}
+
+.sewa-content input,
+.sewa-content select,
+.sewa-content textarea,
+.sewa-content button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sewa-content button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sewa-content button:hover {
+  background-color: #0056b3;
+}
