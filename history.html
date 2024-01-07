@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titipin Aja</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/history.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-full">
+        <img class="navbar-logo" src="assets/img/logo.png" alt="logo" />
+        <a href="index.html" class="navbar-logo-text"
+          ><span>Titipin</span>Aja</a
+        >
+      </div>
+      <div class="navbar-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="service.html">Layanan Kami</a>
+        <a href="rent.html">Sewa</a>
+        <a href="take.html">Ambil</a>
+        <a href="history.html">Riwayat Pesanan</a>
+      </div>
+
+      <div class="navbar-icon">
+        <a href="profil.html""><i data-feather="user"></i></a>
+        <a href="#" id="hmenu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <section id="orderHistory">
+        <h2>Riwayat Pesanan</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nomor Transaksi</th>
+              <th>Ukuran Loker</th>
+              <th>Nomor Loker</th>
+              <th>Waktu Penitipan</th>
+              <th>Waktu Pengambilan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1411001</td>
+              <td>Medium</td>
+              <td>001</td>
+              <td>14-11-2023 12:00</td>
+              <td>15-11-2023 12:00</td>
+            </tr>
+            <!-- Tambahkan baris lain sesuai dengan data riwayat pesanan -->
+          </tbody>
+        </table>
+      </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"
+    ></script>
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

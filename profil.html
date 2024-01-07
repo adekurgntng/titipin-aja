@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titipin Aja</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/profil.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-full">
+        <img class="navbar-logo" src="assets/img/logo.png" alt="logo" />
+        <a href="index.html" class="navbar-logo-text"
+          ><span>Titipin</span>Aja</a
+        >
+      </div>
+      <div class="navbar-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="service.html">Layanan Kami</a>
+        <a href="rent.html">Sewa</a>
+        <a href="take.html">Ambil</a>
+        <a href="history.html">Riwayat Pesanan</a>
+      </div>
+
+      <div class="navbar-icon">
+        <a href="profil.html"><i data-feather="user"></i></a>
+        <a href="#" id="hmenu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <section class="profil" id="profil">
+      <div class="profil-content">
+        <h2>Profil Pengguna</h2>
+        <form id="profileForm">
+          <div class="user-details">
+            <label for="namaLengkap">Nama Lengkap:</label>
+            <input
+              type="text"
+              id="namaLengkap"
+              name="namaLengkap"
+              value="Murni Lestari Rahmi"
+            />
+
+            <label for="jenisKelamin">Jenis Kelamin:</label>
+            <select id="jenisKelamin" name="jenisKelamin">
+              <option value="pria">Pria</option>
+              <option value="wanita" selected>Wanita</option>
+            </select>
+
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="4">
+Jl. Contoh No. 123</textarea
+            >
+
+            <label for="noHP">No HP:</label>
+            <input type="text" id="noHP" name="noHP" value="089123123123" />
+          </div>
+
+          <!-- Edit Profile and Logout Buttons -->
+          <div class="profil-buttons">
+            <button type="button" class="edit-button">Edit</button>
+            <a href="index.html" class="logout-button">Logout</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"
+    ></script>
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

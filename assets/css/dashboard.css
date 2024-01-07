@@ -1,0 +1,112 @@
+body {
+    background: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.content {
+    max-width: 800px;
+    margin: 80px auto 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+  }
+  
+  .content h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Gaya untuk bagian pengumuman, kotak sewa, dan kotak ambil */
+  #announcements,
+  #rentBox,
+  #pickupBox {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+  
+  #announcements h2,
+  #rentBox h2,
+  #pickupBox h2 {
+    background-color: #cea991;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #announcements p,
+  #rentBox p,
+  #pickupBox p {
+    margin-top: 10px;
+  }
+  
+  /* Gaya tabel untuk detail pesanan */
+  .detail-pesanan table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+  }
+  
+  .detail-pesanan th,
+  .detail-pesanan td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+    border-radius: 5px;
+  }
+  
+  .detail-pesanan th {
+    background-color: #cea991;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Gaya untuk keterangan pengembalian */
+  .keterangan-pengembalian {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .keterangan-pengembalian label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: black;
+  }
+  
+  .keterangan-pengembalian select,
+  .keterangan-pengembalian textarea,
+  .keterangan-pengembalian button,
+  .keterangan-pengembalian input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    font-size: 1.1em;
+  }
+  
+  .keterangan-pengembalian button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  .keterangan-pengembalian button:hover {
+    background-color: #0056b3;
+  }
+
+  .box-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
