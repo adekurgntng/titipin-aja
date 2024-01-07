@@ -1,86 +1,85 @@
 body {
-    background: url("../img/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .ambil-content {
-    max-width: 800px;
-    margin: 80px auto 20px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    color: black;
-    text-align: center;
+  max-width: 800px;
+  margin: 80px auto 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: black;
+  text-align: center;
 }
 
 .ambil-content h2 {
-    color: #333;
-    font-size: 2em;
-    margin-bottom: 20px;
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .detail-pesanan {
-    background-color: #f8f9fa;
-    padding: 15px;
-    border-radius: 10px;
-    margin: auto;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  margin: auto;
 }
 
 .detail-pesanan table {
-    width: 100%;
-    margin: auto;
-    
+  width: 100%;
+  margin: auto;
 }
 
 .detail-pesanan th,
 .detail-pesanan td {
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: left;
-    border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+  border-radius: 5px;
 }
 
 .detail-pesanan th {
-    background-color: #cea991;
-    color: white;
-    text-align: center;
+  background-color: #cea991;
+  color: white;
+  text-align: center;
 }
 
 .keterangan-pengembalian {
-    background-color: #f8f9fa;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 20px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 .ambil-content label {
-    color: #333;
-    font-size: 1.1em;
-    margin-bottom: 8px;
-    display: block;
+  color: #333;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  display: block;
 }
 
 .ambil-content select,
 .ambil-content textarea,
 .ambil-content button,
 .ambil-content input {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 12px;
-    font-size: 1.1em;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  font-size: 1.1em;
 }
 
 .ambil-content button {
-    background-color: #007BFF;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.2em;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
 }
 
 .ambil-content button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
